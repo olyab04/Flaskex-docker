@@ -20,7 +20,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       - name: Build Image
-        run: docker build -t ikambarov/flaskex:${{ github.sha }} .
+        run: docker build -t olyab04/flaskex:${{ github.sha }} .
 
       - name: List Images
         run: docker images
